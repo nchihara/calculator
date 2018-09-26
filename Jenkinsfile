@@ -17,17 +17,8 @@ node
 		junit "target/surefire-reports/*xml"
 		
 	}
-//	stage("Archive")
-//	{
-//		try
-//		{
-//			archiveArtifacts  artifacts: '**/target/*jar', figerprint: true
-//		}
-//		finally
-//		{
-//			echo "Clean up workspace"
-//			deleteDir()
-//			sh "/opt/maven-3.3/bin/mvn clean"
-//		}
-//	}
+    stage("CODE Coverage")
+	{
+			sh "/opt/maven-3.3/bin/mvn jacoco:report"
+	}
 }		
