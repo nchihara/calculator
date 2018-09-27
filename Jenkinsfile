@@ -19,6 +19,7 @@ node
 	}
     stage("CODE Coverage")
 	{
-			sh "/opt/maven-3.3/bin/mvn jacoco:report"
+		echo "Step:Code Coverage Test by jacoco"
+		sh "/opt/maven-3.3/bin/mvn jacoco:report"
 	}
 }		
