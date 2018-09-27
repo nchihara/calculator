@@ -20,6 +20,6 @@ node
     stage("CODE Coverage")
 	{
 		echo "Step:Code Coverage Test by jacoco"
-		sh "/opt/maven-3.3/bin/mvn jacoco:report"
+		sh "/opt/maven-3.3/bin/mvn test jacoco:report"
 	}
 }		
