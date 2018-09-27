@@ -13,7 +13,7 @@ public class CalculatorApplicationTests {
 
 	@Test
 	public void testSum() {
-		assertEquals((int)11, (int)calculatorApplication.sum(8,3));
+		assertEquals((long)11, (long)calculatorApplication.sum(8,3));
 	}
 
 }
