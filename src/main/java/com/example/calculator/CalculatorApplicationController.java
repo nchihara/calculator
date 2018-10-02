@@ -14,4 +14,9 @@ public class CalculatorApplicationController {
     String sum (@RequestParam("a") Integer a, @RequestParam("b") Integer b) {
         return String.valueOf(calculatorApplication.sum(a,b));
     }
+
+    @RequestMapping("/mul")
+    String mul (@RequestParam("a") Integer a, @RequestParam("b") Integer b) {
+        return String.valueOf(calculatorApplication.mul(a,b));
+    }
 }
